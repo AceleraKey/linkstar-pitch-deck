@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkStar - Pitch Deck para Investidores Anjo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- SEO Básico -->
+    <meta name="description" content="Investimento anjo na LinkStar, a plataforma que revoluciona a conexão entre artistas e fãs com IA e monetização direta. Liderada por Léo Santana.">
+    <meta name="keywords" content="investimento anjo, startup, música, tech, creator economy, léo santana, linkstar">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'linkstar-gold': '#FFD700',
+                        'linkstar-dark': '#0a0a0a',
+                        'linkstar-gray': '#1a1a1a'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23000" width="1200" height="800"/><circle cx="600" cy="400" r="300" fill="%23FFD700" opacity="0.1"/></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-linkstar-dark text-white">
+
+    <!-- Menu Sticky -->
+    <nav class="fixed top-0 w-full bg-linkstar-dark/95 backdrop-blur-sm z-50 border-b border-linkstar-gold/20">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold gradient-text">LinkStar</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#problema" class="hover:text-linkstar-gold transition-colors">Problema</a>
+                    <a href="#solucao" class="hover:text-linkstar-gold transition-colors">Solução</a>
+                    <a href="#mercado" class="hover:text-linkstar-gold transition-colors">Mercado</a>
+                    <a href="#financeiro" class="hover:text-linkstar-gold transition-colors">Financeiro</a>
+                    <a href="#roadmap" class="hover:text-linkstar-gold transition-colors">Roadmap</a>
+                </div>
+                <button class="bg-linkstar-gold text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
+                    Investir Agora
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="min-h-screen flex items-center justify-center text-center hero-bg pt-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Logo Placeholder -->
+                <div class="mb-8">
+                    <div class="w-24 h-24 mx-auto bg-linkstar-gold rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-star text-black text-3xl"></i>
+                    </div>
+                    <p class="text-sm text-gray-400">Uma estrela estilizada formada por múltiplos elos de uma corrente</p>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="gradient-text">LinkStar:</span><br>
+                    Onde Fãs se Tornam Família.<br>
+                    E Artistas Encontram o Futuro.
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-linkstar-gold mb-4 font-semibold">
+                    Monetize sua paixão. Conecte-se de verdade.
+                </p>
+                
+                <p class="text-lg md:text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    Estamos transformando 22 milhões de seguidores em uma comunidade engajada e uma receita recorrente de 7 dígitos. E Léo Santana é só o começo.
+                </p>
+                
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <button class="bg-linkstar-gold text-black px-8 py-4 rounded-lg text-lg font-bold hover:bg-yellow-400 transition-all transform hover:scale-105">
+                        <i class="fas fa-handshake mr-2"></i>
+                        Quero ser Investidor
+                    </button>
+                    <button class="border-2 border-linkstar-gold text-linkstar-gold px-8 py-4 rounded-lg text-lg font-bold hover:bg-linkstar-gold hover:text-black transition-all">
+                        <i class="fas fa-download mr-2"></i>
+                        Solicite o Pitch Completo em PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O PROBLEMA -->
+    <section id="problema" class="py-20 px-4 bg-black">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">A Conexão Quebrada:</span><br>
+                    Artistas Ricos em Fãs, Pobres em Receita.
+                </h2>
+                
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-4xl mx-auto">
+                    No cenário digital atual, artistas com milhões de seguidores enfrentam um paradoxo doloroso: audiências gigantescas, mas controle e monetização mínimos. A relação é superficial e intermediada por algoritmos.
+                </p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-linkstar-gray p-6 rounded-xl card-hover border border-red-500/20">
+                        <div class="text-red-500 text-4xl mb-4">
+                            <i class="fas fa-users-slash"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-red-400">Audiência Fragmentada</h3>
+                        <p class="text-gray-300">Fãs estão espalhados pelo Instagram, TikTok, YouTube. A comunicação é um grito no meio da multidão.</p>
+                    </div>
+                    
+                    <div class="bg-linkstar-gray p-6 rounded-xl card-hover border border-red-500/20">
+                        <div class="text-red-500 text-4xl mb-4">
+                            <i class="fas fa-chain-broken"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-red-400">Dependência de Plataformas</h3>
+                        <p class="text-gray-300">Artistas são reféns de algoritmos que entregam conteúdo para menos de 10% da base e ficam com até 70% da receita.</p>
+                    </div>
+                    
+                    <div class="bg-linkstar-gray p-6 rounded-xl card-hover border border-red-500/20">
+                        <div class="text-red-500 text-4xl mb-4">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-red-400">Monetização Irrisória</h3>
+                        <p class="text-gray-300">Um músico recebe cerca de <strong>R$ 0,003 por stream</strong> no Spotify. É impossível construir uma carreira sustentável.</p>
+                    </div>
+                    
+                    <div class="bg-linkstar-gray p-6 rounded-xl card-hover border border-red-500/20">
+                        <div class="text-red-500 text-4xl mb-4">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-red-400">Fãs Pagam, Artista Não Vê</h3>
+                        <p class="text-gray-300">Fãs brasileiros já gastam, impulsionando um mercado de <strong>R$ 3,486 bilhões</strong>, mas esse valor se perde em intermediários.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-16">
+                    <p class="text-2xl md:text-3xl font-bold gradient-text italic">
+                        "Eles constroem o império, mas não possuem as chaves do castelo."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A SOLUÇÃO LINKSTAR -->
+    <section id="solucao" class="py-20 px-4 bg-linkstar-gray">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">LinkStar:</span><br>
+                    O Hub de Comando do Artista.
+                </h2>
+                
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-4xl mx-auto">
+                    Entregamos as chaves do reino de volta para quem realmente importa: o artista e seus fãs mais leais.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-purple-900/30 p-8 rounded-xl card-hover border border-purple-500/30">
+                        <div class="text-purple-400 text-5xl mb-6">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-purple-300">Avatar com IA Exclusivo</h3>
+                        <p class="text-gray-300 text-lg">Uma conexão pessoal, em escala. Fãs conversam 24/7 com um avatar de Léo Santana treinado para ser idêntico a ele, criando uma experiência de proximidade inédita.</p>
+                    </div>
+                    
+                    <div class="bg-blue-900/30 p-8 rounded-xl card-hover border border-blue-500/30">
+                        <div class="text-blue-400 text-5xl mb-6">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-300">Dashboard de Fãs</h3>
+                        <p class="text-gray-300 text-lg">Pela primeira vez, o artista "possui" seu público. Analytics completos para entender quem são os super fãs, o que desejam e como engajá-los.</p>
+                    </div>
+                    
+                    <div class="bg-green-900/30 p-8 rounded-xl card-hover border border-green-500/30">
+                        <div class="text-green-400 text-5xl mb-6">
+                            <i class="fas fa-vault"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-green-300">Monetização All-in-One</h3>
+                        <p class="text-gray-300 text-lg">De assinaturas a merch e NFTs. Múltiplas fontes de receita em um só lugar, com o artista retendo a maior parte do valor. Um modelo já validado por plataformas como TopFans, que retém apenas ~10%.</p>
+                    </div>
+                    
+                    <div class="bg-yellow-900/30 p-8 rounded-xl card-hover border border-yellow-500/30">
+                        <div class="text-yellow-400 text-5xl mb-6">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-yellow-300">Comunicação Sem Ruído</h3>
+                        <p class="text-gray-300 text-lg">Um ambiente livre de algoritmos e distrações. Cada post, cada mensagem, chega a 100% dos fãs.</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-16">
+                    <p class="text-2xl md:text-3xl font-bold gradient-text">
+                        Menos ruído, mais conexão. Menos intermediários, mais receita.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MERCADO E OPORTUNIDADE -->
+    <section id="mercado" class="py-20 px-4 bg-black">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">Um Oceano Azul</span><br>
+                    de Paixão e Dinheiro.
+                </h2>
+                
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-4xl mx-auto">
+                    Estamos no cruzamento de duas megatendências: a Creator Economy (US$ 100 bilhões+) e o engajado mercado musical brasileiro (9º maior do mundo).
+                </p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <div class="text-center">
+                        <div class="text-5xl font-bold gradient-text mb-2">R$ 3.48B</div>
+                        <p class="text-gray-300">Faturamento da indústria musical no Brasil em 2024, com crescimento de 21,7%.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-5xl font-bold gradient-text mb-2">752M</div>
+                        <p class="text-gray-300">Usuários pagantes de streaming de áudio no mundo, provando que fãs pagam por conteúdo.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-5xl font-bold gradient-text mb-2">76%</div>
+                        <p class="text-gray-300">Das músicas mais ouvidas no Brasil são nacionais, mostrando a força dos ídolos locais.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-5xl font-bold gradient-text mb-2">US$ 13.7M</div>
+                        <p class="text-gray-300">Aporte recebido pela Medallion, uma plataforma similar nos EUA, validando o interesse dos investidores.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-linkstar-gray p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Benchmarking Global</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="border-l-4 border-linkstar-gold pl-6">
+                            <h4 class="text-xl font-bold mb-2 text-linkstar-gold">Weverse (K-Pop)</h4>
+                            <p class="text-gray-300">Superou 30 milhões de inscritos, provando o apetite global por comunidades de fãs.</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-linkstar-gold pl-6">
+                            <h4 class="text-xl font-bold mb-2 text-linkstar-gold">Patreon/OnlyFans</h4>
+                            <p class="text-gray-300">Validaram o modelo de assinatura mensal, mas a LinkStar foca no nicho musical com uma solução integrada e segura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUTO -->
+    <section id="produto" class="py-20 px-4 bg-linkstar-gray">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">Mais que um App.</span><br>
+                    Uma Central de Comando.
+                </h2>
+                
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-4xl mx-auto">
+                    O MVP da LinkStar é um ecossistema robusto e integrado, projetado para máxima conexão e monetização.
+                </p>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-black p-6 rounded-xl card-hover border border-linkstar-gold/20">
+                        <div class="text-linkstar-gold text-3xl mb-4">
+                            <i class="fas fa-stream"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-linkstar-gold">Hub de Conteúdo Centralizado</h3>
+                        <p class="text-gray-300">Agrega feeds de redes sociais e posta conteúdos exclusivos (bastidores, vídeos inéditos) só para membros.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl card-hover border border-linkstar-gold/20">
+                        <div class="text-linkstar-gold text-3xl mb-4">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-linkstar-gold">Chatbot IA do Artista</h3>
+                        <p class="text-gray-300">O fã envia uma mensagem e recebe uma resposta instantânea "do Léo Santana", 24/7. Uma revolução na percepção de acesso.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl card-hover border border-linkstar-gold/20">
+                        <div class="text-linkstar-gold text-3xl mb-4">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-linkstar-gold">Monetização Modular</h3>
+                        <p class="text-gray-300">Assinaturas, venda de merch, ingressos VIP, gorjetas virtuais ("gifts") e conteúdo pay-per-view.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl card-hover border border-linkstar-gold/20">
+                        <div class="text-linkstar-gold text-3xl mb-4">
+                            <i class="fas fa-analytics"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-linkstar-gold">Analytics Avançado</h3>
+                        <p class="text-gray-300">Dashboard para o artista com dados demográficos, engajamento, churn e receita por fã.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl card-hover border border-linkstar-gold/20">
+                        <div class="text-linkstar-gold text-3xl mb-4">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-linkstar-gold">Gamificação</h3>
+                        <p class="text-gray-300">Badges de lealdade, pontos por interação e ranking de fãs para estimular o engajamento contínuo.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl card-hover border border-linkstar-gold/20">
+                        <div class="text-linkstar-gold text-3xl mb-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-linkstar-gold">Experiência Livre de Ruído</h3>
+                        <p class="text-gray-300">Feed cronológico, sem anúncios de terceiros (para planos pagos) e sem haters. Um ambiente seguro e premium.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODELO DE MONETIZAÇÃO -->
+    <section id="monetizacao" class="py-20 px-4 bg-black">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">Freemium para Escalar,</span><br>
+                    Premium para Faturar.
+                </h2>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-gray-800 p-8 rounded-xl text-center border border-gray-600">
+                        <div class="text-4xl mb-4">🥉</div>
+                        <h3 class="text-2xl font-bold mb-4 text-gray-300">Bronze</h3>
+                        <div class="text-3xl font-bold mb-4 text-gray-300">Grátis</div>
+                        <p class="text-gray-400">Acesso básico, funil de conversão.</p>
+                    </div>
+                    
+                    <div class="bg-blue-900/30 p-8 rounded-xl text-center border border-blue-500 transform scale-105">
+                        <div class="text-4xl mb-4">⭐</div>
+                        <h3 class="text-2xl font-bold mb-4 text-blue-300">Fã</h3>
+                        <div class="text-3xl font-bold mb-4 text-blue-300">R$ 19,90<span class="text-sm">/mês</span></div>
+                        <p class="text-gray-300">Conteúdo exclusivo, lives mensais.</p>
+                    </div>
+                    
+                    <div class="bg-purple-900/30 p-8 rounded-xl text-center border border-purple-500">
+                        <div class="text-4xl mb-4">👑</div>
+                        <h3 class="text-2xl font-bold mb-4 text-purple-300">Super Fã</h3>
+                        <div class="text-3xl font-bold mb-4 text-purple-300">R$ 39,90<span class="text-sm">/mês</span></div>
+                        <p class="text-gray-300">Tudo do Fã + Meet & Greets virtuais, interação prioritária.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-linkstar-gray p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Fluxos de Receita Adicionais</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🛍️</div>
+                            <h4 class="font-bold mb-2">Merch</h4>
+                            <p class="text-gray-300 text-sm">Comissão sobre vendas</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🎫</div>
+                            <h4 class="font-bold mb-2">Ingressos VIP</h4>
+                            <p class="text-gray-300 text-sm">Taxa sobre pacotes especiais</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl mb-2">🎁</div>
+                            <h4 class="font-bold mb-2">Gifts Virtuais</h4>
+                            <p class="text-gray-300 text-sm">Gorjetas durante lives</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJEÇÕES FINANCEIRAS -->
+    <section id="financeiro" class="py-20 px-4 bg-linkstar-gray">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">Três Cenários,</span><br>
+                    Um Destino: Crescimento Exponencial.
+                </h2>
+                
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-4xl mx-auto">
+                    Baseado na conversão de uma pequena fração dos 22 milhões de seguidores de Léo Santana em 6 meses.
+                </p>
+                
+                <div class="bg-black p-8 rounded-xl mb-12">
+                    <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Projeção de MRR (Receita Recorrente Mensal)</h3>
+                    <div class="h-96">
+                        <canvas id="mrrChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-black rounded-xl overflow-hidden">
+                        <thead class="bg-linkstar-gold text-black">
+                            <tr>
+                                <th class="p-4 text-left">Cenário (Jul/2026)</th>
+                                <th class="p-4 text-left">Taxa de Conversão</th>
+                                <th class="p-4 text-left">Assinantes Pagos</th>
+                                <th class="p-4 text-left">MRR Estimado</th>
+                                <th class="p-4 text-left">Faturamento Anualizado</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-bold text-red-400">Pessimista</td>
+                                <td class="p-4">0.05%</td>
+                                <td class="p-4">~11.000</td>
+                                <td class="p-4 font-bold">~R$ 275 mil</td>
+                                <td class="p-4 font-bold">~R$ 3,3 milhões</td>
+                            </tr>
+                            <tr class="border-b border-gray-700">
+                                <td class="p-4 font-bold text-blue-400">Realista</td>
+                                <td class="p-4">0.10%</td>
+                                <td class="p-4">~22.000</td>
+                                <td class="p-4 font-bold">~R$ 550 mil</td>
+                                <td class="p-4 font-bold">~R$ 6,6 milhões</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-green-400">Otimista</td>
+                                <td class="p-4">0.20%</td>
+                                <td class="p-4">~44.000</td>
+                                <td class="p-4 font-bold">~R$ 1,1 milhão</td>
+                                <td class="p-4 font-bold">~R$ 13,2 milhões</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="text-sm text-gray-400 mt-4 text-center">
+                    <em>Fonte: Plano de Negócios, seção "Projeções de Receita".</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESTRUTURA DE CUSTOS -->
+    <section id="custos" class="py-20 px-4 bg-black">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">Investimento Inteligente,</span><br>
+                    Operação Enxuta.
+                </h2>
+                
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-4xl mx-auto">
+                    Nosso investimento de R$ 1.1M foi planejado para 12 meses, cobrindo o desenvolvimento, lançamento e a operação inicial, com foco em alocação estratégica de capital.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-16">
+                    <div class="bg-linkstar-gray p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Alocação do Investimento Inicial</h3>
+                        <div class="h-64">
+                            <canvas id="investmentChart"></canvas>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-linkstar-gray p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Custos Mensais vs. Burn Rate</h3>
+                        <div class="h-64">
+                            <canvas id="burnRateChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overflow-x-auto">
+                    <table class="w-full bg-linkstar-gray rounded-xl overflow-hidden">
+                        <thead class="bg-linkstar-gold text-black">
+                            <tr>
+                                <th class="p-4 text-left">Categoria</th>
+                                <th class="p-4 text-left">Período</th>
+                                <th class="p-4 text-left">Custo Total Estimado</th>
+                                <th class="p-4 text-left">Detalhes</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-300">
+                            <tr class="border-b border-gray-600">
+                                <td class="p-4 font-bold text-blue-400">Desenvolvimento (CAPEX/OPEX)</td>
+                                <td class="p-4">Ago/25 - Dez/25</td>
+                                <td class="p-4 font-bold">~R$ 450 mil</td>
+                                <td class="p-4">Equipe técnica, ferramentas, licenças.</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="p-4 font-bold text-purple-400">Marketing e Lançamento (OPEX)</td>
+                                <td class="p-4">Nov/25 - Fev/26</td>
+                                <td class="p-4 font-bold">~R$ 200 mil</td>
+                                <td class="p-4">Campanha de lançamento, evento, mídia paga.</td>
+                            </tr>
+                            <tr class="border-b border-gray-600">
+                                <td class="p-4 font-bold text-green-400">Operação e Conteúdo (OPEX)</td>
+                                <td class="p-4">Jan/26 em diante</td>
+                                <td class="p-4 font-bold">~R$ 400 mil (18m)</td>
+                                <td class="p-4">Servidores, equipe de suporte, produção.</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-bold text-yellow-400">Aquisição de Equipamentos (CAPEX)</td>
+                                <td class="p-4">Out/25</td>
+                                <td class="p-4 font-bold">~R$ 131 mil</td>
+                                <td class="p-4">Câmeras, switcher, drone para transmissão.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <p class="text-sm text-gray-400 mt-4 text-center">
+                    <em>Fonte: Dashboard Financeiro HTML e Plano de Negócios, seção "Premissas de Custo".</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- RETORNO PARA O INVESTIDOR -->
+    <section id="retorno" class="py-20 px-4 bg-linkstar-gray">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">Unit Economics Sólidos,</span><br>
+                    ROI Explosivo.
+                </h2>
+                
+                <p class="text-xl text-gray-300 text-center mb-16 max-w-4xl mx-auto">
+                    A combinação de um CAC baixo (impulsionado pelo marketing orgânico do artista) e um LTV alto (devido à paixão dos super fãs) cria um modelo de negócio extremamente lucrativo e escalável.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-black p-8 rounded-xl text-center">
+                        <h3 class="text-2xl font-bold mb-6 gradient-text">CAC vs. LTV</h3>
+                        <div class="h-48">
+                            <canvas id="cacLtvChart"></canvas>
+                        </div>
+                        <p class="text-sm text-gray-400 mt-4">Relação LTV/CAC > 8x (Benchmarks saudáveis buscam > 3x)</p>
+                    </div>
+                    
+                    <div class="bg-black p-8 rounded-xl text-center">
+                        <h3 class="text-2xl font-bold mb-6 gradient-text">Payback do CAC</h3>
+                        <div class="text-6xl font-bold text-green-400 mb-4">1-2</div>
+                        <p class="text-xl text-gray-300 mb-2">meses</p>
+                        <p class="text-sm text-gray-400">Recuperamos o custo de aquisição rapidamente</p>
+                    </div>
+                    
+                    <div class="bg-black p-8 rounded-xl text-center">
+                        <h3 class="text-2xl font-bold mb-6 gradient-text">ROI em 5 anos</h3>
+                        <div class="text-6xl font-bold text-linkstar-gold mb-4">10-25x</div>
+                        <p class="text-xl text-gray-300 mb-2">Potencial de retorno</p>
+                        <p class="text-sm text-gray-400">Cenário realista com expansão</p>
+                    </div>
+                </div>
+                
+                <div class="bg-black p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center gradient-text">Projeção de ROI (Valorização do Equity)</h3>
+                    <div class="h-64">
+                        <canvas id="roiChart"></canvas>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 mt-8">
+                        <div class="text-center">
+                            <h4 class="text-xl font-bold mb-2 text-green-400">Payback do Investimento</h4>
+                            <p class="text-gray-300">2 a 3 anos via dividendos</p>
+                        </div>
+                        <div class="text-center">
+                            <h4 class="text-xl font-bold mb-2 text-linkstar-gold">Valuation Conservador</h4>
+                            <p class="text-gray-300">5x a receita anual com expansão</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-sm text-gray-400 mt-4 text-center">
+                    <em>Fonte: Plano de Negócios, seção "Plano Financeiro Detalhado".</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROADMAP DE EXECUÇÃO -->
+    <section id="roadmap" class="py-20 px-4 bg-black">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">Velocidade e Precisão:</span><br>
+                    Do MVP à Liderança de Mercado.
+                </h2>
+                
+                <div class="relative">
+                    <!-- Timeline Line -->
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-linkstar-gold h-full"></div>
+                    
+                    <div class="space-y-12">
+                        <!-- Fase 1 -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-linkstar-gray p-6 rounded-xl">
+                                    <div class="text-3xl mb-2">🎨</div>
+                                    <h3 class="text-xl font-bold mb-2 text-linkstar-gold">1. Concepção</h3>
+                                    <p class="text-gray-300 mb-2">Ago - Out/25</p>
+                                    <p class="text-sm text-gray-400">Captação, UX/UI, Time-chave</p>
+                                    <p class="text-lg font-bold text-green-400">~R$ 390 mil</p>
+                                </div>
+                            </div>
+                            <div class="w-8 h-8 bg-linkstar-gold rounded-full flex items-center justify-center z-10">
+                                <div class="w-4 h-4 bg-black rounded-full"></div>
+                            </div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        
+                        <!-- Fase 2 -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8"></div>
+                            <div class="w-8 h-8 bg-linkstar-gold rounded-full flex items-center justify-center z-10">
+                                <div class="w-4 h-4 bg-black rounded-full"></div>
+                            </div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-linkstar-gray p-6 rounded-xl">
+                                    <div class="text-3xl mb-2">💻</div>
+                                    <h3 class="text-xl font-bold mb-2 text-linkstar-gold">2. Desenvolvimento</h3>
+                                    <p class="text-gray-300 mb-2">Nov - Dez/25</p>
+                                    <p class="text-sm text-gray-400">MVP funcional, Testes Beta</p>
+                                    <p class="text-lg font-bold text-green-400">~R$ 310 mil</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Fase 3 -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-linkstar-gray p-6 rounded-xl">
+                                    <div class="text-3xl mb-2">🚀</div>
+                                    <h3 class="text-xl font-bold mb-2 text-linkstar-gold">3. Lançamento</h3>
+                                    <p class="text-gray-300 mb-2">Jan - Fev/26</p>
+                                    <p class="text-sm text-gray-400">Lançamento no "Baile da Santinha", aquisição dos 1ºs usuários</p>
+                                    <p class="text-lg font-bold text-green-400">~R$ 260 mil</p>
+                                </div>
+                            </div>
+                            <div class="w-8 h-8 bg-linkstar-gold rounded-full flex items-center justify-center z-10">
+                                <div class="w-4 h-4 bg-black rounded-full"></div>
+                            </div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                        
+                        <!-- Fase 4 -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8"></div>
+                            <div class="w-8 h-8 bg-linkstar-gold rounded-full flex items-center justify-center z-10">
+                                <div class="w-4 h-4 bg-black rounded-full"></div>
+                            </div>
+                            <div class="w-1/2 pl-8">
+                                <div class="bg-linkstar-gray p-6 rounded-xl">
+                                    <div class="text-3xl mb-2">📈</div>
+                                    <h3 class="text-xl font-bold mb-2 text-linkstar-gold">4. Crescimento</h3>
+                                    <p class="text-gray-300 mb-2">Mar - Jul/26</p>
+                                    <p class="text-sm text-gray-400">Retenção, otimização, preparação para expansão</p>
+                                    <p class="text-lg font-bold text-green-400">~R$ 53 mil/mês</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Fase 5 -->
+                        <div class="flex items-center">
+                            <div class="w-1/2 pr-8 text-right">
+                                <div class="bg-linkstar-gray p-6 rounded-xl">
+                                    <div class="text-3xl mb-2">🌐</div>
+                                    <h3 class="text-xl font-bold mb-2 text-linkstar-gold">5. Expansão</h3>
+                                    <p class="text-gray-300 mb-2">Ago/26 em diante</p>
+                                    <p class="text-sm text-gray-400">Onboarding de novos artistas, nova rodada (Series A)</p>
+                                    <p class="text-lg font-bold text-purple-400">Series A</p>
+                                </div>
+                            </div>
+                            <div class="w-8 h-8 bg-linkstar-gold rounded-full flex items-center justify-center z-10">
+                                <div class="w-4 h-4 bg-black rounded-full"></div>
+                            </div>
+                            <div class="w-1/2 pl-8"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-16">
+                    <button class="bg-linkstar-gold text-black px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors">
+                        Veja nosso plano de execução detalhado
+                    </button>
+                </div>
+                
+                <p class="text-sm text-gray-400 mt-8 text-center">
+                    <em>Fonte: Plano de Negócios, seção "Cronograma de Execução".</em>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIME E GOVERNANÇA -->
+    <section id="time" class="py-20 px-4 bg-linkstar-gray">
+        <div class="container mx-auto">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-6">
+                    <span class="gradient-text">O Time dos Sonhos:</span><br>
+                    Paixão, Expertise e Skin in the Game.
+                </h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-black p-6 rounded-xl text-center card-hover">
+                        <div class="w-20 h-20 bg-linkstar-gold rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-black text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-linkstar-gold">Rafael Gandarela</h3>
+                        <p class="text-gray-400 mb-2">Fundador (60%)</p>
+                        <p class="text-gray-300 text-sm">Visionário do produto e tecnologia.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl text-center card-hover">
+                        <div class="w-20 h-20 bg-linkstar-gold rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-black text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-linkstar-gold">Diego Peixoto</h3>
+                        <p class="text-gray-400 mb-2">Co-fundador (10%)</p>
+                        <p class="text-gray-300 text-sm">Especialista em negócios e operações.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl text-center card-hover">
+                        <div class="w-20 h-20 bg-linkstar-gold rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-user text-black text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-linkstar-gold">Eduardo Azulay</h3>
+                        <p class="text-gray-400 mb-2">Co-fundador (10%)</p>
+                        <p class="text-gray-300 text-sm">Estrategista financeiro e jurídico.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl text-center card-hover lg:col-start-2">
+                        <div class="w-20 h-20 bg-linkstar-gold rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-star text-black text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-linkstar-gold">Léo Santana</h3>
+                        <p class="text-gray-400 mb-2">Sócio-Artista (10%)</p>
+                        <p class="text-gray-300 text-sm">O motor de tração, com imagem e acesso a uma base de 22M de fãs.</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-linkstar-gold/20 to-yellow-600/20 p-6 rounded-xl text-center card-hover border-2 border-linkstar-gold">
+                        <div class="w-20 h-20 bg-linkstar-gold rounded-full mx-auto mb-4 flex items-center justify-center">
+                            <i class="fas fa-handshake text-black text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-linkstar-gold">Investidor Anjo</h3>
+                        <p class="text-gray-400 mb-2">(10%)</p>
+                        <p class="text-gray-300 text-sm">O capital inteligente para acelerar o crescimento.</p>
+                    </div>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-black p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-4 text-linkstar-gold">
+                            <i class="fas fa-chart-line mr-2"></i>
+                            Stock Options
+                        </h3>
+                        <p class="text-gray-300"><strong>10% do equity</strong> reservados para atrair e reter talentos de ponta.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-4 text-linkstar-gold">
+                            <i class="fas fa-star mr-2"></i>
+                            Acordo com o Artista
+                        </h3>
+                        <p class="text-gray-300">Léo Santana tem 10% de equity + <strong>50% do lucro líquido</strong>, garantindo total engajamento.</p>
+                    </div>
+                    
+                    <div class="bg-black p-6 rounded-xl">
+                        <h3 class="text-xl font-bold mb-4 text-linkstar-gold">
+                            <i class="fas fa-coins mr-2"></i>
+                            Política de Dividendos
+                        </h3>
+                        <p class="text-gray-300">Após o payback do artista, <strong>50% do lucro</strong> fica na empresa para reinvestimento ou distribuição aos sócios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION FINAL -->
+    <section id="cta" class="py-20 px-4 bg-black">
+        <div class="container mx-auto">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    <span class="gradient-text">Seja o Sócio da Próxima</span><br>
+                    Revolução na Indústria da Música.
+                </h2>
+                
+                <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                    A LinkStar não é apenas uma startup. É um movimento. Estamos construindo o futuro da relação fã-artista, e a oportunidade de entrar no início é agora.
+                </p>
+                
+                <button class="bg-linkstar-gold text-black px-12 py-6 rounded-lg text-2xl font-bold hover:bg-yellow-400 transition-all transform hover:scale-105 mb-16">
+                    <i class="fas fa-calendar-alt mr-3"></i>
+                    Agende uma Reunião e Invista na LinkStar
+                </button>
+                
+                <div class="bg-linkstar-gray p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-8 gradient-text">FAQ Rápido</h3>
+                    
+                    <div class="grid md:grid-cols-3 gap-8 text-left">
+                        <div>
+                            <h4 class="font-bold mb-2 text-linkstar-gold">Qual o valor do investimento?</h4>
+                            <p class="text-gray-300 text-sm">Buscamos R$ 1.000.000 por 10% de equity.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-2 text-linkstar-gold">Como mitigar o risco de dependência?</h4>
+                            <p class="text-gray-300 text-sm">O case de Léo Santana é a prova de conceito. O roadmap 2.0 já prevê a expansão para dezenas de outros artistas.</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-2 text-linkstar-gold">Qual a maior barreira tecnológica?</h4>
+                            <p class="text-gray-300 text-sm">O Avatar de IA é nosso maior diferencial. A equipe já conta com especialistas e o investimento está provisionado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 px-4 bg-linkstar-dark border-t border-linkstar-gold/20">
+        <div class="container mx-auto text-center">
+            <div class="text-2xl font-bold gradient-text mb-4">LinkStar</div>
+            <p class="text-gray-400 mb-4">Conectando artistas e fãs através da tecnologia</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-linkstar-gold transition-colors">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-linkstar-gold transition-colors">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-linkstar-gold transition-colors">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Configuração global dos gráficos
+        Chart.defaults.color = '#ffffff';
+        Chart.defaults.backgroundColor = '#FFD700';
+        
+        // Dados financeiros reais baseados no Plano de Negócios
+        const mrrData = {
+            labels: ['Jan/26', 'Fev/26', 'Mar/26', 'Abr/26', 'Mai/26', 'Jun/26', 'Jul/26'],
+            pessimista: [50000, 80000, 120000, 160000, 200000, 240000, 275000],
+            realista: [150000, 250000, 350000, 420000, 480000, 520000, 550000],
+            otimista: [300000, 500000, 700000, 850000, 950000, 1050000, 1100000]
+        };
+
+        // Gráfico de MRR
+        const mrrCtx = document.getElementById('mrrChart').getContext('2d');
+        new Chart(mrrCtx, {
+            type: 'line',
+            data: {
+                labels: mrrData.labels,
+                datasets: [
+                    {
+                        label: 'Cenário Pessimista',
+                        data: mrrData.pessimista,
+                        borderColor: '#ef4444',
+                        backgroundColor: 'rgba(239, 68, 68, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'Cenário Realista',
+                        data: mrrData.realista,
+                        borderColor: '#3b82f6',
+                        backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    },
+                    {
+                        label: 'Cenário Otimista',
+                        data: mrrData.otimista,
+                        borderColor: '#22c55e',
+                        backgroundColor: 'rgba(34, 197, 94, 0.1)',
+                        fill: true,
+                        tension: 0.4
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + 
+                                       new Intl.NumberFormat('pt-BR', { 
+                                           style: 'currency', 
+                                           currency: 'BRL' 
+                                       }).format(context.parsed.y);
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return new Intl.NumberFormat('pt-BR', { 
+                                    style: 'currency', 
+                                    currency: 'BRL',
+                                    minimumFractionDigits: 0,
+                                    maximumFractionDigits: 0
+                                }).format(value);
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Alocação do Investimento
+        const investmentCtx = document.getElementById('investmentChart').getContext('2d');
+        new Chart(investmentCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Desenvolvimento (40%)', 'Marketing (20%)', 'Operação (30%)', 'CAPEX (10%)'],
+                datasets: [{
+                    data: [40, 20, 30, 10],
+                    backgroundColor: ['#3b82f6', '#8b5cf6', '#22c55e', '#f59e0b'],
+                    borderWidth: 2,
+                    borderColor: '#000'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Gráfico de Burn Rate com dados reais
+        const burnRateCtx = document.getElementById('burnRateChart').getContext('2d');
+        new Chart(burnRateCtx, {
+            type: 'bar',
+            data: {
+                labels: ['Ago/25', 'Set/25', 'Out/25', 'Nov/25', 'Dez/25', 'Jan/26', 'Fev/26', 'Mar/26'],
+                datasets: [{
+                    label: 'Custo Mensal',
+                    data: [95000, 125000, 165000, 185000, 175000, 145000, 125000, 85000],
+                    backgroundColor: '#ef4444',
+                    borderColor: '#dc2626',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return new Intl.NumberFormat('pt-BR', { 
+                                    style: 'currency', 
+                                    currency: 'BRL',
+                                    minimumFractionDigits: 0,
+                                    maximumFractionDigits: 0
+                                }).format(value);
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Gráfico CAC vs LTV
+        const cacLtvCtx = document.getElementById('cacLtvChart').getContext('2d');
+        new Chart(cacLtvCtx, {
+            type: 'bar',
+            data: {
+                labels: ['CAC', 'LTV'],
+                datasets: [{
+                    data: [35, 375],
+                    backgroundColor: ['#ef4444', '#22c55e'],
+                    borderColor: ['#dc2626', '#16a34a'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return 'R$ ' + value;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Gráfico de ROI
+        const roiCtx = document.getElementById('roiChart').getContext('2d');
+        new Chart(roiCtx, {
+            type: 'line',
+            data: {
+                labels: ['Ano 1', 'Ano 2', 'Ano 3', 'Ano 4', 'Ano 5'],
+                datasets: [{
+                    label: 'ROI Acumulado',
+                    data: [0, 2, 5, 12, 20],
+                    borderColor: '#FFD700',
+                    backgroundColor: 'rgba(255, 215, 0, 0.1)',
+                    fill: true,
+                    tension: 0.4,
+                    pointBackgroundColor: '#FFD700',
+                    pointBorderColor: '#000',
+                    pointBorderWidth: 2,
+                    pointRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            callback: function(value) {
+                                return value + 'x';
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return 'ROI: ' + context.parsed.y + 'x o investimento inicial';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Smooth scrolling para links do menu
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animação de entrada dos cards
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Aplicar animação aos cards
+        document.querySelectorAll('.card-hover').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
+
